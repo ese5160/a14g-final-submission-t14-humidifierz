@@ -84,26 +84,35 @@ We meet the requirement.
 
 ### PCBA
 TOP
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/5aa05539-c385-44d5-b861-1534afa6b568" width="45%"></img> 
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/0127d1f1-4f41-42d8-97bc-7ad0da3538e8" width="45%"></img> 
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/ec198045-58b6-4b64-a812-bae20a20bf6c" width="45%"></img> 
 
 BOTTOM
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/217dcfcd-8c54-4812-bcc6-949ed201cd28" width="45%"></img> 
 
 THERMAL IMAGE
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/fb67dfba-710d-4ca1-a75d-8abcb1d85d8f" width="45%"></img> 
 
 ### Design Circuit
 2D View
-<img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/f522df86-b556-4973-8275-3689bf7f74cd" width="45%"></img> 
+
+<img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/f522df86-b556-4973-8275-3689bf7f74cd" width="45%"></img>
+
 3D View
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/978b3941-caba-4427-b78a-b016bea3333e" width="45%"></img> 
 
 ### Node-RED Screenshot
 Node-RED dashboard 
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/90c7706b-07d0-4d49-a665-170be114c250" width="45%"></img> 
+
 Node-RED backend
+
 <img src="https://github.com/ese5160/a14g-final-submission-t14-humidifierz/assets/147022262/99e08aac-41f2-49fc-ba89-75302ce1955f" width="45%"></img>  
 
 ### Block diagram
