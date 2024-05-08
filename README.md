@@ -24,14 +24,45 @@ This device has five main parts. There are two sensors, two actuators and one co
 ### Challenges
 Where did you face difficulties? This could be in firmware, hardware, software, integration, etc.
 How did you overcome these challenges?
+
+First of all, the BOOST circuit we found did not output 5 volts as expected. After several tests, we realized that we could not add resistors as per the datasheet, and after shorting the resistors, we got the desired voltage.
+
+There is also the issue of doing microsecond delays in freerots. We solved this problem by using higher frequency hardware clocks.
+
+There is also the fact that the readings from the distance sensors fluctuate wildly. We solved this problem by using multiple samples and then sorting the data and averaging it after removing the maximum and minimum values.
+
+
 ### Prototype Learnings
 What lessons did you learn by building and testing this prototype?
 If you had to build this device again, what would you do differently?
+
+Don't put electronic components too densely, may need place to improve circuitry.Cables and batteries need to be considered when designing the model of the device.
+
+I might design the board shape based on the desired shape of the device.
+
+
 ### Next Steps
 What steps are needed to finish or improve this project?
+
+Need to find a waterproof container for the water. Obviously, the 3D printed material is not waterproof, and we simply added a plastic film to the inside, which didn't work very well.
+Add more features, show time, debug mode, etc.
+
 ### Takeaways from ESE5160
 What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+
+We learned a lot, such as circuit design, layout design, programming, the use of various sensors, SPI, I2C, UART, FREEROTS, and so on!
+
 ### Project Links
+[URL to Node-RED](http://52.177.181.50:1880/#flow/7c028bbca64c4975)
+Considering that Microsoft often blocks our devices for strange reasons, we also saved the Node-RED to github.
+
+[Node-RED code file in github](https://github.com/ese5160/a12g-firmware-drivers-t14-humidifierz/tree/main/node-red)
+
+
+[Code link A12G code repository](https://github.com/ese5160/a12g-firmware-drivers-t14-humidifierz.git)
+
+[PCBA on Altium 365](https://upenn-eselabs.365.altium.com/designs/2BEAFA08-3D1C-4C91-A039-88861FEE33D5)
+
 
 ## 3. Hardware & Software Requirements
 ### Hardware Requirement
@@ -39,7 +70,7 @@ What did you learn in ESE5160 through the lectures, assignments, and this course
 We meet the requirement.
 
 #### HRS 02 – 4007 distance sensor shall be used for obstacle detection. The sensor should be able to measure a 16cm change in water level (the sensor shall be able to measure a minimum of 4cm and a maximum of 20cm from the water surface). Data shall transfer to microcontroller via GPIO.
-We meet the requirement. The range of measurement distance have a small change, it is 4cm to 15cm.
+We meet the requirement. The range of measurement distance have a small change, it is 3cm to 14cm.
 
 #### HRS 03 – An 1.30 inch OLED SSD1306 display shall be used for user interface. The display shall communicate with the microcontroller via I2C bus.
 We meet the requirement.
@@ -54,7 +85,7 @@ We meet the requirement.
 We meet the requirement.
 
 #### HRS 07 – A button shall be used to control the device on and off. The button shall be connected to the microcontroller via GPIO.
-We did not create a button to control. When we build 3D model, we found that there is hard to place a button and it is not useful. According to this, we detect this part.
+We did not create a button to control. When we build 3D model, we found that there is hard to place a button and it is not useful. According to this, we detect this part. The code for this feature is labeled in the documentation and is commented out.
 
 #### HRS 08 – A LED shall be used to show device on and off. The LED shall be connected to the microcontroller via GPIO.
 We meet the requirement.
