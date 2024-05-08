@@ -22,8 +22,6 @@ Water is an indispensable part of people's lives. Living in a humid environment 
 This device has five main parts. There are two sensors, two actuators and one controller. It can detect the ambient temperature and humidity by temperature and humidity sensors (SHTC3-TR-10KS), also detect the water level of the humidifier tank in real time by distance sensor (4007). Then the information of the temperature, humidity and water level data in real time will be displayed on the OLED (SSD1306) display. The second actuator is humidifier module. It is made up from two parts: one is vibrating tablet and other is driving circuit which can supply specific frequency power signal. This module starts when the ambient humidity is below the set value and stops when it is above the set value. In general, the user can control the humidifier through the software, and power the atomizing ceramic piece through the driving circuit to form a spray. When the water level is below a certain condition, the software will alert the user and the display will present warning text to prompt the user to change the water.
 
 ### Challenges
-Where did you face difficulties? This could be in firmware, hardware, software, integration, etc.
-How did you overcome these challenges?
 
 First of all, the BOOST circuit we found did not output 5 volts as expected. After several tests, we realized that we could not add resistors as per the datasheet, and after shorting the resistors, we got the desired voltage.
 
@@ -33,23 +31,16 @@ There is also the fact that the readings from the distance sensors fluctuate wil
 
 
 ### Prototype Learnings
-What lessons did you learn by building and testing this prototype?
-If you had to build this device again, what would you do differently?
-
 Don't put electronic components too densely, may need place to improve circuitry.Cables and batteries need to be considered when designing the model of the device.
 
 I might design the board shape based on the desired shape of the device.
 
 
 ### Next Steps
-What steps are needed to finish or improve this project?
-
 Need to find a waterproof container for the water. Obviously, the 3D printed material is not waterproof, and we simply added a plastic film to the inside, which didn't work very well.
 Add more features, show time, debug mode, etc.
 
 ### Takeaways from ESE5160
-What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
-
 We learned a lot, such as circuit design, layout design, programming, the use of various sensors, SPI, I2C, UART, FREEROTS, and so on!
 
 ### Project Links
